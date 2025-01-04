@@ -1,0 +1,455 @@
+2025-01-04 14:51:45 - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-04 14:51:45 - Starting MainApplication using Java 21.0.5 with PID 10148 (C:\Users\PC\Desktop\my_project\main\main\target\classes started by PC in C:\Users\PC\Desktop\my_project\main\main)
+2025-01-04 14:51:45 - No active profile set, falling back to 1 default profile: "default"
+2025-01-04 14:51:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-04 14:51:45 - Finished Spring Data repository scanning in 49 ms. Found 4 JPA repository interfaces.
+2025-01-04 14:51:46 - Tomcat initialized with port 8081 (http)
+2025-01-04 14:51:46 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-01-04 14:51:46 - Starting service [Tomcat]
+2025-01-04 14:51:46 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-04 14:51:46 - Initializing Spring embedded WebApplicationContext
+2025-01-04 14:51:46 - Root WebApplicationContext: initialization completed in 1279 ms
+2025-01-04 14:51:46 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-04 14:51:46 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-04 14:51:46 - HHH000026: Second-level cache disabled
+2025-01-04 14:51:47 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-04 14:51:47 - HikariPool-1 - Starting...
+2025-01-04 14:51:47 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@118fbaf0
+2025-01-04 14:51:47 - HikariPool-1 - Start completed.
+2025-01-04 14:51:47 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-04 14:51:47 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-04 14:51:47 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-04 14:51:48 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 14:51:48 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-04 14:51:48 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-04 14:51:48 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-04 14:51:49 - Starting ProtocolHandler ["http-nio-8081"]
+2025-01-04 14:51:49 - Tomcat started on port 8081 (http) with context path '/'
+2025-01-04 14:51:49 - Started MainApplication in 4.479 seconds (process running for 4.892)
+2025-01-04 14:51:49 - *** Start batch delete expired tokens***
+2025-01-04 14:51:49 - *** Finish batch delete expired tokens ***
+2025-01-04 14:51:54 - *** Start batch delete expired tokens***
+2025-01-04 14:51:54 - *** Finish batch delete expired tokens ***
+2025-01-04 14:51:59 - *** Start batch delete expired tokens***
+2025-01-04 14:51:59 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:04 - *** Start batch delete expired tokens***
+2025-01-04 14:52:04 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:09 - *** Start batch delete expired tokens***
+2025-01-04 14:52:09 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:14 - *** Start batch delete expired tokens***
+2025-01-04 14:52:14 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:19 - *** Start batch delete expired tokens***
+2025-01-04 14:52:19 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:24 - *** Start batch delete expired tokens***
+2025-01-04 14:52:24 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:29 - *** Start batch delete expired tokens***
+2025-01-04 14:52:29 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:34 - *** Start batch delete expired tokens***
+2025-01-04 14:52:34 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:39 - *** Start batch delete expired tokens***
+2025-01-04 14:52:39 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:44 - *** Start batch delete expired tokens***
+2025-01-04 14:52:44 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:49 - *** Start batch delete expired tokens***
+2025-01-04 14:52:49 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:54 - *** Start batch delete expired tokens***
+2025-01-04 14:52:54 - *** Finish batch delete expired tokens ***
+2025-01-04 14:52:59 - *** Start batch delete expired tokens***
+2025-01-04 14:52:59 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:04 - *** Start batch delete expired tokens***
+2025-01-04 14:53:04 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:09 - *** Start batch delete expired tokens***
+2025-01-04 14:53:09 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:14 - *** Start batch delete expired tokens***
+2025-01-04 14:53:14 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:19 - *** Start batch delete expired tokens***
+2025-01-04 14:53:19 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:24 - *** Start batch delete expired tokens***
+2025-01-04 14:53:24 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:29 - *** Start batch delete expired tokens***
+2025-01-04 14:53:29 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:34 - *** Start batch delete expired tokens***
+2025-01-04 14:53:34 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:39 - *** Start batch delete expired tokens***
+2025-01-04 14:53:39 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:44 - *** Start batch delete expired tokens***
+2025-01-04 14:53:44 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:49 - *** Start batch delete expired tokens***
+2025-01-04 14:53:49 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:54 - *** Start batch delete expired tokens***
+2025-01-04 14:53:54 - *** Finish batch delete expired tokens ***
+2025-01-04 14:53:59 - *** Start batch delete expired tokens***
+2025-01-04 14:53:59 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:04 - *** Start batch delete expired tokens***
+2025-01-04 14:54:04 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:09 - *** Start batch delete expired tokens***
+2025-01-04 14:54:09 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:14 - *** Start batch delete expired tokens***
+2025-01-04 14:54:14 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:19 - *** Start batch delete expired tokens***
+2025-01-04 14:54:19 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:24 - *** Start batch delete expired tokens***
+2025-01-04 14:54:24 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:29 - *** Start batch delete expired tokens***
+2025-01-04 14:54:29 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:34 - *** Start batch delete expired tokens***
+2025-01-04 14:54:34 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:39 - *** Start batch delete expired tokens***
+2025-01-04 14:54:39 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:44 - *** Start batch delete expired tokens***
+2025-01-04 14:54:44 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:49 - *** Start batch delete expired tokens***
+2025-01-04 14:54:49 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:54 - *** Start batch delete expired tokens***
+2025-01-04 14:54:54 - *** Finish batch delete expired tokens ***
+2025-01-04 14:54:59 - *** Start batch delete expired tokens***
+2025-01-04 14:54:59 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:04 - *** Start batch delete expired tokens***
+2025-01-04 14:55:04 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:09 - *** Start batch delete expired tokens***
+2025-01-04 14:55:09 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:14 - *** Start batch delete expired tokens***
+2025-01-04 14:55:14 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:19 - *** Start batch delete expired tokens***
+2025-01-04 14:55:19 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:24 - *** Start batch delete expired tokens***
+2025-01-04 14:55:24 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:29 - *** Start batch delete expired tokens***
+2025-01-04 14:55:29 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:34 - *** Start batch delete expired tokens***
+2025-01-04 14:55:34 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:39 - *** Start batch delete expired tokens***
+2025-01-04 14:55:39 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:44 - *** Start batch delete expired tokens***
+2025-01-04 14:55:44 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:49 - *** Start batch delete expired tokens***
+2025-01-04 14:55:49 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:54 - *** Start batch delete expired tokens***
+2025-01-04 14:55:54 - *** Finish batch delete expired tokens ***
+2025-01-04 14:55:59 - *** Start batch delete expired tokens***
+2025-01-04 14:55:59 - *** Finish batch delete expired tokens ***
+2025-01-04 14:56:04 - *** Start batch delete expired tokens***
+2025-01-04 14:56:04 - *** Finish batch delete expired tokens ***
+2025-01-04 14:56:08 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-04 14:56:08 - Graceful shutdown complete
+2025-01-04 14:56:08 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 14:56:08 - HikariPool-1 - Shutdown initiated...
+2025-01-04 14:56:08 - HikariPool-1 - Shutdown completed.
+2025-01-04 14:57:19 - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-04 14:57:19 - Starting MainApplication using Java 21.0.5 with PID 18696 (C:\Users\PC\Desktop\my_project\main\main\target\classes started by PC in C:\Users\PC\Desktop\my_project\main\main)
+2025-01-04 14:57:19 - No active profile set, falling back to 1 default profile: "default"
+2025-01-04 14:57:20 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-04 14:57:20 - Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2025-01-04 14:57:20 - Tomcat initialized with port 8081 (http)
+2025-01-04 14:57:20 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-01-04 14:57:20 - Starting service [Tomcat]
+2025-01-04 14:57:20 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-04 14:57:20 - Initializing Spring embedded WebApplicationContext
+2025-01-04 14:57:20 - Root WebApplicationContext: initialization completed in 1202 ms
+2025-01-04 14:57:20 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-04 14:57:20 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-04 14:57:20 - HHH000026: Second-level cache disabled
+2025-01-04 14:57:21 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-04 14:57:21 - HikariPool-1 - Starting...
+2025-01-04 14:57:21 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5e541ef9
+2025-01-04 14:57:21 - HikariPool-1 - Start completed.
+2025-01-04 14:57:21 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-04 14:57:21 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-04 14:57:21 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-04 14:57:21 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 14:57:22 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-04 14:57:22 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-04 14:57:22 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-04 14:57:23 - Starting ProtocolHandler ["http-nio-8081"]
+2025-01-04 14:57:23 - Tomcat started on port 8081 (http) with context path '/'
+2025-01-04 14:57:23 - Started MainApplication in 4.086 seconds (process running for 4.445)
+2025-01-04 14:57:23 - *** Start batch delete expired tokens***
+2025-01-04 14:57:23 - *** Finish batch delete expired tokens ***
+2025-01-04 14:57:28 - *** Start batch delete expired tokens***
+2025-01-04 14:57:28 - *** Finish batch delete expired tokens ***
+2025-01-04 14:57:33 - *** Start batch delete expired tokens***
+2025-01-04 14:57:33 - *** Finish batch delete expired tokens ***
+2025-01-04 14:57:38 - *** Start batch delete expired tokens***
+2025-01-04 14:57:38 - *** Finish batch delete expired tokens ***
+2025-01-04 14:57:43 - *** Start batch delete expired tokens***
+2025-01-04 14:57:43 - *** Finish batch delete expired tokens ***
+2025-01-04 14:57:48 - *** Start batch delete expired tokens***
+2025-01-04 14:57:48 - *** Finish batch delete expired tokens ***
+2025-01-04 14:57:53 - *** Start batch delete expired tokens***
+2025-01-04 14:57:53 - *** Finish batch delete expired tokens ***
+2025-01-04 14:57:58 - *** Start batch delete expired tokens***
+2025-01-04 14:57:58 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:03 - *** Start batch delete expired tokens***
+2025-01-04 14:58:03 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:08 - *** Start batch delete expired tokens***
+2025-01-04 14:58:08 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:13 - *** Start batch delete expired tokens***
+2025-01-04 14:58:13 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:18 - *** Start batch delete expired tokens***
+2025-01-04 14:58:18 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:23 - *** Start batch delete expired tokens***
+2025-01-04 14:58:23 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:26 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-04 14:58:26 - Graceful shutdown complete
+2025-01-04 14:58:26 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 14:58:26 - HikariPool-1 - Shutdown initiated...
+2025-01-04 14:58:27 - HikariPool-1 - Shutdown completed.
+2025-01-04 14:58:32 - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-04 14:58:32 - Starting MainApplication using Java 21.0.5 with PID 11632 (C:\Users\PC\Desktop\my_project\main\main\target\classes started by PC in C:\Users\PC\Desktop\my_project\main\main)
+2025-01-04 14:58:32 - No active profile set, falling back to 1 default profile: "default"
+2025-01-04 14:58:32 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-04 14:58:32 - Finished Spring Data repository scanning in 59 ms. Found 4 JPA repository interfaces.
+2025-01-04 14:58:33 - Tomcat initialized with port 8081 (http)
+2025-01-04 14:58:33 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-01-04 14:58:33 - Starting service [Tomcat]
+2025-01-04 14:58:33 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-04 14:58:33 - Initializing Spring embedded WebApplicationContext
+2025-01-04 14:58:33 - Root WebApplicationContext: initialization completed in 1203 ms
+2025-01-04 14:58:33 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-04 14:58:33 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-04 14:58:33 - HHH000026: Second-level cache disabled
+2025-01-04 14:58:33 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-04 14:58:33 - HikariPool-1 - Starting...
+2025-01-04 14:58:34 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d01b0d8
+2025-01-04 14:58:34 - HikariPool-1 - Start completed.
+2025-01-04 14:58:34 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-04 14:58:34 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-04 14:58:34 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-04 14:58:34 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 14:58:35 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-04 14:58:35 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-04 14:58:35 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-04 14:58:36 - Starting ProtocolHandler ["http-nio-8081"]
+2025-01-04 14:58:36 - Tomcat started on port 8081 (http) with context path '/'
+2025-01-04 14:58:36 - Started MainApplication in 4.194 seconds (process running for 4.553)
+2025-01-04 14:58:36 - *** Start batch delete expired tokens***
+2025-01-04 14:58:36 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:41 - *** Start batch delete expired tokens***
+2025-01-04 14:58:41 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:46 - *** Start batch delete expired tokens***
+2025-01-04 14:58:46 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:51 - *** Start batch delete expired tokens***
+2025-01-04 14:58:51 - *** Finish batch delete expired tokens ***
+2025-01-04 14:58:56 - *** Start batch delete expired tokens***
+2025-01-04 14:58:56 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:01 - *** Start batch delete expired tokens***
+2025-01-04 14:59:01 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:06 - *** Start batch delete expired tokens***
+2025-01-04 14:59:06 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:11 - *** Start batch delete expired tokens***
+2025-01-04 14:59:11 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:16 - *** Start batch delete expired tokens***
+2025-01-04 14:59:16 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:21 - *** Start batch delete expired tokens***
+2025-01-04 14:59:21 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:26 - *** Start batch delete expired tokens***
+2025-01-04 14:59:26 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:31 - *** Start batch delete expired tokens***
+2025-01-04 14:59:31 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:36 - *** Start batch delete expired tokens***
+2025-01-04 14:59:36 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:41 - *** Start batch delete expired tokens***
+2025-01-04 14:59:41 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:46 - *** Start batch delete expired tokens***
+2025-01-04 14:59:46 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:51 - *** Start batch delete expired tokens***
+2025-01-04 14:59:51 - *** Finish batch delete expired tokens ***
+2025-01-04 14:59:56 - *** Start batch delete expired tokens***
+2025-01-04 14:59:56 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:01 - *** Start batch delete expired tokens***
+2025-01-04 15:00:01 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:06 - *** Start batch delete expired tokens***
+2025-01-04 15:00:06 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:11 - *** Start batch delete expired tokens***
+2025-01-04 15:00:11 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:16 - *** Start batch delete expired tokens***
+2025-01-04 15:00:16 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:21 - *** Start batch delete expired tokens***
+2025-01-04 15:00:21 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:26 - *** Start batch delete expired tokens***
+2025-01-04 15:00:26 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:31 - *** Start batch delete expired tokens***
+2025-01-04 15:00:31 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:36 - *** Start batch delete expired tokens***
+2025-01-04 15:00:36 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:41 - *** Start batch delete expired tokens***
+2025-01-04 15:00:41 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:46 - *** Start batch delete expired tokens***
+2025-01-04 15:00:46 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:51 - *** Start batch delete expired tokens***
+2025-01-04 15:00:51 - *** Finish batch delete expired tokens ***
+2025-01-04 15:00:56 - *** Start batch delete expired tokens***
+2025-01-04 15:00:56 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:01 - *** Start batch delete expired tokens***
+2025-01-04 15:01:01 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:06 - *** Start batch delete expired tokens***
+2025-01-04 15:01:06 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:09 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-04 15:01:09 - Graceful shutdown complete
+2025-01-04 15:01:09 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 15:01:09 - HikariPool-1 - Shutdown initiated...
+2025-01-04 15:01:09 - HikariPool-1 - Shutdown completed.
+2025-01-04 15:01:14 - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-04 15:01:14 - Starting MainApplication using Java 21.0.5 with PID 20024 (C:\Users\PC\Desktop\my_project\main\main\target\classes started by PC in C:\Users\PC\Desktop\my_project\main\main)
+2025-01-04 15:01:14 - No active profile set, falling back to 1 default profile: "default"
+2025-01-04 15:01:15 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-04 15:01:15 - Finished Spring Data repository scanning in 50 ms. Found 4 JPA repository interfaces.
+2025-01-04 15:01:16 - Tomcat initialized with port 8081 (http)
+2025-01-04 15:01:16 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-01-04 15:01:16 - Starting service [Tomcat]
+2025-01-04 15:01:16 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-04 15:01:16 - Initializing Spring embedded WebApplicationContext
+2025-01-04 15:01:16 - Root WebApplicationContext: initialization completed in 1193 ms
+2025-01-04 15:01:16 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-04 15:01:16 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-04 15:01:16 - HHH000026: Second-level cache disabled
+2025-01-04 15:01:16 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-04 15:01:16 - HikariPool-1 - Starting...
+2025-01-04 15:01:16 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ba35152
+2025-01-04 15:01:16 - HikariPool-1 - Start completed.
+2025-01-04 15:01:16 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-04 15:01:16 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-04 15:01:17 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-04 15:01:17 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 15:01:17 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-04 15:01:18 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-04 15:01:18 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-04 15:01:18 - Starting ProtocolHandler ["http-nio-8081"]
+2025-01-04 15:01:18 - Tomcat started on port 8081 (http) with context path '/'
+2025-01-04 15:01:18 - Started MainApplication in 4.206 seconds (process running for 4.567)
+2025-01-04 15:01:18 - *** Start batch delete expired tokens***
+2025-01-04 15:01:18 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:23 - *** Start batch delete expired tokens***
+2025-01-04 15:01:23 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:28 - *** Start batch delete expired tokens***
+2025-01-04 15:01:28 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:33 - *** Start batch delete expired tokens***
+2025-01-04 15:01:33 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:38 - *** Start batch delete expired tokens***
+2025-01-04 15:01:38 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:43 - *** Start batch delete expired tokens***
+2025-01-04 15:01:43 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:48 - *** Start batch delete expired tokens***
+2025-01-04 15:01:48 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:53 - *** Start batch delete expired tokens***
+2025-01-04 15:01:53 - *** Finish batch delete expired tokens ***
+2025-01-04 15:01:58 - *** Start batch delete expired tokens***
+2025-01-04 15:01:58 - *** Finish batch delete expired tokens ***
+2025-01-04 15:02:03 - *** Start batch delete expired tokens***
+2025-01-04 15:02:03 - *** Finish batch delete expired tokens ***
+2025-01-04 15:02:08 - *** Start batch delete expired tokens***
+2025-01-04 15:02:08 - *** Finish batch delete expired tokens ***
+2025-01-04 15:02:13 - *** Start batch delete expired tokens***
+2025-01-04 15:02:13 - *** Finish batch delete expired tokens ***
+2025-01-04 15:02:14 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-04 15:02:14 - Graceful shutdown complete
+2025-01-04 15:02:14 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 15:02:14 - HikariPool-1 - Shutdown initiated...
+2025-01-04 15:02:14 - HikariPool-1 - Shutdown completed.
+2025-01-04 15:08:24 - HV000001: Hibernate Validator 8.0.2.Final
+2025-01-04 15:08:24 - Starting MainApplication using Java 21.0.5 with PID 2556 (C:\Users\PC\Desktop\my_project\main\main\target\classes started by PC in C:\Users\PC\Desktop\my_project\main\main)
+2025-01-04 15:08:24 - No active profile set, falling back to 1 default profile: "default"
+2025-01-04 15:08:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-01-04 15:08:24 - Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+2025-01-04 15:08:25 - Tomcat initialized with port 8081 (http)
+2025-01-04 15:08:25 - Initializing ProtocolHandler ["http-nio-8081"]
+2025-01-04 15:08:25 - Starting service [Tomcat]
+2025-01-04 15:08:25 - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-04 15:08:25 - Initializing Spring embedded WebApplicationContext
+2025-01-04 15:08:25 - Root WebApplicationContext: initialization completed in 1215 ms
+2025-01-04 15:08:25 - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-01-04 15:08:25 - HHH000412: Hibernate ORM core version 6.6.4.Final
+2025-01-04 15:08:25 - HHH000026: Second-level cache disabled
+2025-01-04 15:08:25 - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-01-04 15:08:25 - HikariPool-1 - Starting...
+2025-01-04 15:08:25 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@31693a86
+2025-01-04 15:08:25 - HikariPool-1 - Start completed.
+2025-01-04 15:08:26 - HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-01-04 15:08:26 - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.40
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-01-04 15:08:26 - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-01-04 15:08:26 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 15:08:27 - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-01-04 15:08:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-01-04 15:08:27 - Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailService
+2025-01-04 15:08:28 - Starting ProtocolHandler ["http-nio-8081"]
+2025-01-04 15:08:28 - Tomcat started on port 8081 (http) with context path '/'
+2025-01-04 15:08:28 - Started MainApplication in 4.34 seconds (process running for 4.688)
+2025-01-04 15:08:28 - *** Start batch delete expired tokens***
+2025-01-04 15:08:28 - *** Finish batch delete expired tokens ***
+2025-01-04 15:08:33 - *** Start batch delete expired tokens***
+2025-01-04 15:08:33 - *** Finish batch delete expired tokens ***
+2025-01-04 15:08:38 - *** Start batch delete expired tokens***
+2025-01-04 15:08:38 - *** Finish batch delete expired tokens ***
+2025-01-04 15:08:43 - *** Start batch delete expired tokens***
+2025-01-04 15:08:43 - *** Finish batch delete expired tokens ***
+2025-01-04 15:08:46 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-04 15:08:46 - Initializing Servlet 'dispatcherServlet'
+2025-01-04 15:08:46 - Completed initialization in 0 ms
+2025-01-04 15:08:46 - Login processing
+2025-01-04 15:08:48 - *** Start batch delete expired tokens***
+2025-01-04 15:08:48 - *** Finish batch delete expired tokens ***
+2025-01-04 15:08:50 - Login processing
+2025-01-04 15:08:53 - *** Start batch delete expired tokens***
+2025-01-04 15:08:53 - *** Finish batch delete expired tokens ***
+2025-01-04 15:08:58 - *** Start batch delete expired tokens***
+2025-01-04 15:08:58 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:03 - *** Start batch delete expired tokens***
+2025-01-04 15:09:03 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:08 - *** Start batch delete expired tokens***
+2025-01-04 15:09:08 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:13 - *** Start batch delete expired tokens***
+2025-01-04 15:09:13 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:18 - *** Start batch delete expired tokens***
+2025-01-04 15:09:18 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:23 - *** Start batch delete expired tokens***
+2025-01-04 15:09:23 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:28 - *** Start batch delete expired tokens***
+2025-01-04 15:09:28 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:33 - *** Start batch delete expired tokens***
+2025-01-04 15:09:33 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:38 - *** Start batch delete expired tokens***
+2025-01-04 15:09:38 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:43 - *** Start batch delete expired tokens***
+2025-01-04 15:09:43 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:48 - *** Start batch delete expired tokens***
+2025-01-04 15:09:48 - *** Finish batch delete expired tokens ***
+2025-01-04 15:09:49 - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-04 15:09:49 - Graceful shutdown complete
+2025-01-04 15:09:49 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-01-04 15:09:49 - HikariPool-1 - Shutdown initiated...
+2025-01-04 15:09:49 - HikariPool-1 - Shutdown completed.
