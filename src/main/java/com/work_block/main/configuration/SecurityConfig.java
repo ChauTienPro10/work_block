@@ -1,6 +1,7 @@
 package com.work_block.main.configuration;
 
 import com.work_block.main.custom.CustomUserDetailService;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Lazy;
@@ -11,14 +12,25 @@ import org.springframework.security.config.annotation.web.configuration.EnableWe
 import org.springframework.security.config.annotation.web.configurers.AbstractHttpConfigurer;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.security.oauth2.client.InMemoryOAuth2AuthorizedClientService;
+import org.springframework.security.oauth2.client.OAuth2AuthorizedClientService;
+import org.springframework.security.oauth2.client.registration.ClientRegistration;
+import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
+import org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository;
+import org.springframework.security.oauth2.core.AuthorizationGrantType;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 public class SecurityConfig {
+    @Value("${spring.security.oauth2.client.registration.github.client-id}")
+    private String GITHUB_CLIENT_ID ;
 
-    private final String[] puclicEndpoint = {"/user/**", "/auth/**"};
+    @Value("${spring.security.oauth2.client.registration.github.client-secret}")
+    private String GITHUB_CLIENT_SECRE_KEY ;
+
+    private final String[] puclicEndpoint = {"/user/**", "/auth/**", "/github_client/**", "/login/**", "/oauth2/**"};
 
     private final JwtTokenUtil jwtTokenUtil;
     private final CustomUserDetailService userDetailsService;
@@ -64,13 +76,42 @@ public class SecurityConfig {
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         http
-                .csrf(AbstractHttpConfigurer::disable) // Disable CSRF nếu không cần
+                .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests(authz -> authz
-                        .requestMatchers(puclicEndpoint).permitAll() // Các endpoint không yêu cầu xác thực
-                        .anyRequest().authenticated() // Các endpoint khác cần xác thực
+                        .requestMatchers(puclicEndpoint).permitAll()
+                        .anyRequest().authenticated()
+                )
+                .oauth2Login(oauth2 -> oauth2
+                        .clientRegistrationRepository(clientRegistrationRepository())
+                        .authorizedClientService(authorizedClientService())
                 )
                 .addFilterBefore(jwtAuthenticationFilter(), UsernamePasswordAuthenticationFilter.class); // Thêm JWTAuthenticationFilter
         return http.build();
+    }
+
+    @Bean
+    public ClientRegistrationRepository clientRegistrationRepository() {
+        return new InMemoryClientRegistrationRepository(githubClientRegistration());
+    }
+
+    @Bean
+    public OAuth2AuthorizedClientService authorizedClientService() {
+        return new InMemoryOAuth2AuthorizedClientService(clientRegistrationRepository());
+    }
+
+    @Bean
+    public ClientRegistration githubClientRegistration() {
+        return ClientRegistration.withRegistrationId("github")
+                .clientId("Ov23liFukYIySj1AcGu4")
+                .clientSecret("8568a2912f5181aaebcc51c57235be90669cd221")
+                .scope("read:user", "user:email")
+                .userNameAttributeName("login")
+                .authorizationUri("https://github.com/login/oauth/authorize")
+                .tokenUri("https://github.com/login/oauth/access_token")
+                .userInfoUri("https://api.github.com/user")
+                .redirectUri("http://localhost:8081/login/oauth2/code/github")
+                .authorizationGrantType(AuthorizationGrantType.AUTHORIZATION_CODE)
+                .build();
     }
 
 }

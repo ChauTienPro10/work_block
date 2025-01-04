@@ -17,7 +17,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 @Component
 public class JWTAuthenticationFilter extends OncePerRequestFilter {
 
-    private static final String[] PUBLIC_ENDPOINTS = {"/user/**", "/auth/**"};
+    private static final String[] PUBLIC_ENDPOINTS = {"/user/**", "/auth/**", "/github_client/**", "/login/**", "/oauth2/**"};
     private final JwtTokenUtil jwtTokenUtil;
     private final CustomUserDetailService userDetailsService;
 
@@ -50,9 +50,9 @@ public class JWTAuthenticationFilter extends OncePerRequestFilter {
             }
         }
 
-        if(!isPublicEndpoint(request.getRequestURI()) && !jwtTokenUtil.validateToken(token)){
-            throw new BadCredentialsException("Invalid or expired JWT token");
-        }
+//        if(!isPublicEndpoint(request.getRequestURI()) && !jwtTokenUtil.validateToken(token)){
+//            throw new BadCredentialsException("Invalid or expired JWT token");
+//        }
 
         if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
             var userDetails = userDetailsService.loadUserByUsername(username);
