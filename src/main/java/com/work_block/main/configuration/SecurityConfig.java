@@ -105,7 +105,7 @@ public class SecurityConfig {
         return ClientRegistration.withRegistrationId("github")
                 .clientId("Ov23liFukYIySj1AcGu4")
                 .clientSecret("8568a2912f5181aaebcc51c57235be90669cd221")
-                .scope("read:user", "user:email")
+                .scope("repo")
                 .userNameAttributeName("login")
                 .authorizationUri("https://github.com/login/oauth/authorize")
                 .tokenUri("https://github.com/login/oauth/access_token")
