@@ -23,7 +23,7 @@ public class BatchClearConsoleScreen implements Runnable{
         }
     }
 
-    @Scheduled(fixedRate = 3600000)
+//    @Scheduled(fixedRate = 3600000)
     public void deleteOldLogs() throws IOException {
         run();
     }

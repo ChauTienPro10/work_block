@@ -44,7 +44,7 @@ public class BatchDeleteJwtExpired implements Runnable {
     /**
      * quản lý tần suất chạy batch
      */
-    @Scheduled(fixedRate = 5000)
+//    @Scheduled(fixedRate = 5000)
     public void scheduleTask() {
         log.info("*** Start batch delete expired tokens***");
         run();
