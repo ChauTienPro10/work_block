@@ -33,7 +33,6 @@ public class GitHubOAuthController {
     @GetMapping("/github-token")
     public String getGitHubAccessToken(@RegisteredOAuth2AuthorizedClient("github") OAuth2AuthorizedClient authorizedClient) {
         OAuth2AccessToken accessToken = authorizedClient.getAccessToken();
-        log.info(accessToken.getTokenValue());
         return accessToken.getTokenValue(); // This is the access token
     }
 
@@ -47,4 +46,25 @@ public class GitHubOAuthController {
     public GithubUserInfo getUsernameGitHub(@RequestBody String accessToken){
         return gitHubApiService.getGitHubUser(accessToken);
     }
+
+    /**
+     * Xử lý yêu cầu lấy email từ người dùng
+     * @param accessToken
+     * @return
+     */
+    @PostMapping("/get_email_github")
+    public String getEmailUserFromGithub(@RequestBody String accessToken){
+        return gitHubApiService.getEmailUserGithub(accessToken);
+    }
+
+    /**
+     * xu ly yeu cau xem thong tin token
+     * @param accessToken
+     * @return
+     */
+    @PostMapping("/check_token")
+    public String checkToken(@RequestBody String accessToken){
+        return gitHubApiService.checkTokenStatus(accessToken);
+    }
+
 }
