@@ -6,6 +6,7 @@ import com.work_block.main.dtos.response.github.GithubReposData;
 import com.work_block.main.dtos.response.github.GithubUserInfo;
 import com.work_block.main.enums.GITHUB_URI_API;
 import java.util.List;
+import java.util.Map;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;
@@ -147,5 +148,31 @@ public class GithubReposService extends GithubService {
             System.out.println("Error: " + e.getMessage());
             return null;
         }
+    }
+
+    /**
+     * Lấy lịch sử commit của repo
+     * @param owner
+     * @param repo
+     * @param accessToken
+     * @return
+     */
+    public List<Map<String, Object>> getCommitHistory(String owner, String repo, String accessToken) {
+        String url = String.format("https://api.github.com/repos/%s/%s/commits", owner, repo);
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Authorization", "Bearer " + accessToken);
+        headers.set("Accept", "application/vnd.github+json");
+
+        HttpEntity<String> entity = new HttpEntity<>(headers);
+
+        ResponseEntity<List> response = restTemplate.exchange(
+                url,
+                HttpMethod.GET,
+                entity,
+                List.class
+        );
+
+        return response.getBody();
     }
 }
